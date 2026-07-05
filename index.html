@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TokoPOS - Sistem Kasir Interaktif & Cetak Struk</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCC7ecrGiyRxHpKCR7k3Z_LOhf_LNNNNRQ",
+  authDomain: "tim2pos-ik231.firebaseapp.com",
+  projectId: "tim2pos-ik231",
+  storageBucket: "tim2pos-ik231.firebasestorage.app",
+  messagingSenderId: "217714475605",
+  appId: "1:217714475605:web:e6dbe60effb36c6164cadc",
+  measurementId: "G-5D5W9CD89M"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         .moveover-card {
